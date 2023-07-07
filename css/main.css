@@ -1,0 +1,56 @@
+.content{
+    padding: 3rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(11, 2, 42);
+}
+.subtitle{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2.7rem;
+}
+.text{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Poppins';
+}
+.cartas__finales{
+    position: relative;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .3s linear;
+}
+.carta__final{
+    max-width: 20rem;
+}
+.modal__info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-color: rgb(17, 18, 18);
+    z-index: -1;
+    transition: .3s linear;
+}
+.z-index-10{
+    z-index: 10;
+}
+.modal__text{
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+.carta__elegir{
+    transition: .3s linear;
+    cursor: pointer;
+    max-width: 25rem;
+}
+.carta__elegir:hover{
+    transform: scale(.9);
+    opacity: .7;
+}

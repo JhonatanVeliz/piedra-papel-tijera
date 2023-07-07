@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piedra Papel o Tijera</title>
+
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/jpg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Noramilze -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="content">
+
+        <header class="text-center d-flex justify-content-center flex-wrap">
+
+            <div class="partidas mx-auto px-4">
+                <p class="partidas__text text-white subtitle">Número de partidas:</p>
+                <p class="partidas__text text-white text" id="partidas">0</p>
+            </div>
+
+            <div class="victorias mx-auto px-4">
+                <p class="victorias__text text-white subtitle">Número de Victorias:</p>
+                <p class="victorias__text text-white text" id="victorias">0</p>
+            </div>
+
+            <div class="derrotas mx-auto px-4">
+                <p class="derrotas__text text-white subtitle">Número de Derrotas:</p>
+                <p class="derrotas__text text-white text" id="derrotas">0</p>
+            </div>
+
+        </header>
+
+        <main class="cartas">
+
+            <!-- Contenedor de las cartas finales -->
+            <div class="cartas__finales d-flex justify-content-center container opacity-0" id="cartasFinales">
+
+                <div class="carta__final mx-2">
+                    <img src="" alt="carta final" id="cartaFinalUsuario">
+                </div>
+
+                <div class="carta__final mx-2">
+                    <img src="" alt="carta final" id="cartaFinalMaquina">
+                </div>
+
+                <div class="modal__info opacity-0" id="modalResult">
+                    <p class="modal__text text-white" id="modalText">Ganaste</p>
+                    <button class="btn-primary btn p-4 fs-4" id="modalBtn">Aceptar</button>
+                </div>
+
+            </div>
+
+            <div class="cartas__elegir d-flex justify-content-center">
+
+                <div class="carta__elegir mx-2">
+                    <img src="./img/piedra.png" alt="piedra">
+                </div>
+
+                <div class="carta__elegir mx-2">
+                    <img src="./img/papel.png" alt="papel">
+                </div>
+
+                <div class="carta__elegir mx-2">
+                    <img src="./img/tijera.png" alt="tijera">
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
